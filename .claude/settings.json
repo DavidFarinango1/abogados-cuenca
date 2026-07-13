@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "WebFetch(domain:www.estradayarias.com)",
-      "PowerShell(Start-Process \"c:\\\\Users\\\\Kontablex\\\\Desktop\\\\ABOGADOS CUENCA\\\\index.html\")"
-    ]
-  }
-}
