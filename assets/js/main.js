@@ -57,9 +57,32 @@ document.addEventListener('click', e => {
   else location.hash = name;
 });
 
+// ===== La portada reutiliza los bloques de Valores y Servicios =====
+// Se clonan desde su pestaña para no duplicar el contenido en el HTML.
+const CLONES = {
+  valores: '[data-page="valores"] .values',
+  servicios: '[data-page="servicios"] .cards',
+};
+Object.entries(CLONES).forEach(([nombre, selector]) => {
+  const destino = document.querySelector(`[data-clone="${nombre}"]`);
+  const origen = document.querySelector(selector);
+  if (!destino || !origen) return;
+
+  const copia = origen.cloneNode(true);
+
+  // En la portada las tarjetas de servicios van solo con la foto y el nombre del área:
+  // el listado de cada área se muestra en la pestaña Servicios.
+  if (nombre === 'servicios') {
+    copia.classList.add('cards-compact');
+    copia.querySelectorAll('.card-list').forEach(lista => lista.remove());
+  }
+
+  destino.appendChild(copia);
+});
+
 // ===== Elementos con animación de entrada =====
 document
-  .querySelectorAll('.section-head, .card, .col-media, .col-text, .cta-inner, .mv-card, .value, .why, .grid-list')
+  .querySelectorAll('.section-head, .card, .col-media, .col-text, .cta-inner, .mv-card, .value, .why, .grid-list, .quick-card')
   .forEach(el => el.classList.add('reveal'));
 
 // ===== Header sólido al hacer scroll =====
@@ -70,17 +93,13 @@ window.addEventListener('scroll', () => {
 // ===== Menú móvil =====
 navToggle.addEventListener('click', () => nav.classList.toggle('open'));
 
-// ===== Formulario → WhatsApp =====
-const WHATSAPP = '593987246498';
-document.getElementById('contactForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const data = new FormData(e.target);
-  const texto =
-    `Hola Dr. Luis Mora, soy ${data.get('nombre')}.\n` +
-    `Teléfono: ${data.get('telefono')}\n` +
-    `Área: ${data.get('servicio')}\n` +
-    `Mensaje: ${data.get('mensaje') || 'Quisiera una consulta.'}`;
-  window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`, '_blank');
+// ===== Formulario → correo (FormSubmit) =====
+// El envío lo hace el propio <form> por POST; aquí solo damos feedback al usuario.
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', () => {
+  const boton = contactForm.querySelector('button[type="submit"]');
+  boton.disabled = true;
+  boton.textContent = 'Enviando…';
 });
 
 // ===== Año en el footer =====

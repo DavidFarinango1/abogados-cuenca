@@ -24,7 +24,7 @@
       <a href="#servicios" class="nav-link">Servicios</a>
       <a href="#abogado" class="nav-link">El Abogado</a>
       <a href="#contacto" class="nav-link">Contáctenos</a>
-      <a href="https://wa.me/593987246498" target="_blank" rel="noopener" class="btn btn-gold nav-cta">Consulta</a>
+      <a href="#contacto" class="btn btn-gold nav-cta">Consulta</a>
     </nav>
 
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
@@ -41,6 +41,10 @@
 <div class="page" data-page="inicio">
 
   <section class="hero">
+    <!-- Fondo: fotografía única del despacho, con un zoom lento y continuo -->
+    <div class="hero-slides" aria-hidden="true">
+      <div class="hero-slide" style="background-image:url('Imagen/fondo.jpg')"></div>
+    </div>
     <div class="hero-bg"></div>
     <div class="container hero-inner">
       <div class="hero-text">
@@ -57,10 +61,6 @@
           <a href="#servicios" class="btn btn-outline">Ver nuestros servicios</a>
         </div>
       </div>
-
-      <div class="hero-seal">
-        <img src="Imagen/imagen-3.jpg" alt="Sello Abogados Cuenca" loading="lazy">
-      </div>
     </div>
 
     <div class="hero-strip">
@@ -73,21 +73,99 @@
     </div>
   </section>
 
+  <!-- Resumen · Nosotros -->
+  <section class="section">
+    <div class="container two-col">
+      <div class="col-media">
+        <img src="Imagen/imagen-2.png" alt="Dr. Luis Mora Samaniego atendiendo a un cliente en su despacho" loading="lazy">
+      </div>
+      <div class="col-text">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2>Una firma construida sobre la confianza</h2>
+        <p>
+          <strong>ABOGADOS CUENCA</strong> nació con el propósito de ofrecer servicios jurídicos
+          de alta calidad, fundamentados en la ética, el compromiso y la excelencia profesional.
+          Brindamos asesoría y representación legal integral a personas, familias y empresas.
+        </p>
+        <p>
+          A lo largo de nuestra trayectoria hemos construido relaciones basadas en la confianza,
+          la transparencia y el respeto, acompañando a nuestros clientes en la protección de sus
+          derechos e intereses.
+        </p>
+        <a href="#nosotros" class="btn btn-outline">Conoce nuestra historia</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resumen · Misión y Visión -->
+  <section class="section section-alt">
+    <div class="container mv-grid">
+      <article class="mv-card">
+        <div class="mv-icon">🎯</div>
+        <h2>Misión</h2>
+        <p>
+          Brindamos asesoría y representación legal integral con ética, responsabilidad y
+          excelencia profesional, protegiendo los derechos e intereses de nuestros clientes
+          mediante una atención personalizada, transparente y orientada a resultados.
+        </p>
+      </article>
+      <article class="mv-card">
+        <div class="mv-icon">🌟</div>
+        <h2>Visión</h2>
+        <p>
+          Ser una firma jurídica líder y de referencia en Cuenca y el Ecuador, reconocida por la
+          calidad de sus servicios, la confianza de sus clientes y el compromiso con la justicia.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Resumen · Valores (se clona desde la pestaña Valores) -->
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">¿Por qué elegirnos?</p>
-        <h2>Razones para confiarnos tu caso</h2>
+        <p class="eyebrow">Valores corporativos</p>
+        <h2>Los principios que guían cada caso</h2>
       </div>
+      <div data-clone="valores"></div>
+    </div>
+  </section>
 
-      <div class="why-grid">
-        <div class="why"><span>👤</span><p>Atención personalizada</p></div>
-        <div class="why"><span>⚡</span><p>Respuesta rápida</p></div>
-        <div class="why"><span>💰</span><p>Transparencia en honorarios</p></div>
-        <div class="why"><span>🎓</span><p>Experiencia profesional</p></div>
-        <div class="why"><span>💻</span><p>Asesoría presencial y virtual</p></div>
-        <div class="why"><span>🔒</span><p>Confidencialidad</p></div>
-        <div class="why"><span>🤝</span><p>Acompañamiento durante todo el proceso</p></div>
+  <!-- Resumen · Servicios (se clona desde la pestaña Servicios) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Nuestros servicios</p>
+        <h2>Áreas del derecho que atendemos</h2>
+        <p class="section-lead">
+          Si tu caso no aparece en la lista, escríbenos: lo revisamos y te decimos con claridad
+          qué se puede hacer.
+        </p>
+      </div>
+      <div data-clone="servicios"></div>
+      <div class="center-action">
+        <a href="#servicios" class="btn btn-outline">Ver el detalle de cada área</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resumen · El Abogado -->
+  <section class="section">
+    <div class="container two-col reverse">
+      <div class="col-media">
+        <img src="Imagen/imagen-1.png" alt="Dr. Luis Mora Samaniego junto a un cliente tras la legalización de tierras" loading="lazy">
+      </div>
+      <div class="col-text">
+        <p class="eyebrow">Experiencia profesional</p>
+        <h2>Dr. Luis Mora Samaniego</h2>
+        <p class="role">Abogado — Director de Abogados Cuenca</p>
+        <p>
+          Abogado con amplia experiencia en el ejercicio profesional, dedicado a la asesoría y
+          representación legal de personas, familias, empresas e instituciones públicas y privadas.
+          Cada caso lo atiende personalmente, con estrategias legales orientadas a la protección
+          de los derechos e intereses de sus clientes.
+        </p>
+        <a href="#abogado" class="btn btn-outline">Ver áreas de experiencia</a>
       </div>
     </div>
   </section>
@@ -96,7 +174,10 @@
     <div class="container cta-inner">
       <h2>¿Tienes un caso? Cuéntanoslo hoy.</h2>
       <p>Te decimos con claridad qué se puede hacer, sin compromiso.</p>
-      <a href="https://wa.me/593987246498?text=Hola,%20quisiera%20una%20consulta%20legal" target="_blank" rel="noopener" class="btn btn-gold btn-lg">Consulta por WhatsApp</a>
+      <div class="hero-actions" style="justify-content:center">
+        <a href="#contacto" class="btn btn-gold btn-lg">Enviar consulta</a>
+        <a href="https://wa.me/593987246498?text=Hola,%20quisiera%20una%20consulta%20legal" target="_blank" rel="noopener" class="btn btn-outline btn-lg">WhatsApp</a>
+      </div>
     </div>
   </section>
 
@@ -232,89 +313,121 @@
 
       <div class="cards">
         <article class="card">
-          <div class="card-icon">⚖️</div>
-          <h3>Derecho Civil</h3>
-          <ul class="card-list">
-            <li>Contratos</li>
-            <li>Cobro de deudas</li>
-            <li>Daños y perjuicios</li>
-          </ul>
+          <div class="card-media">
+            <img src="Imagen/servicios/derecho-civil.jpg" alt="Derecho Civil — contratos y cobro de deudas" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Derecho Civil</h3>
+            <ul class="card-list">
+              <li>Contratos</li>
+              <li>Cobro de deudas</li>
+              <li>Daños y perjuicios</li>
+            </ul>
+          </div>
         </article>
 
         <article class="card">
-          <div class="card-icon">👨‍👩‍👧</div>
-          <h3>Derecho de Familia</h3>
-          <ul class="card-list">
-            <li>Divorcios</li>
-            <li>Pensiones alimenticias</li>
-            <li>Tenencia</li>
-            <li>Régimen de visitas</li>
-            <li>Adopciones</li>
-          </ul>
+          <div class="card-media">
+            <img src="Imagen/servicios/derecho-familia.jpg" alt="Derecho de Familia — divorcios y pensiones alimenticias" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Derecho de Familia</h3>
+            <ul class="card-list">
+              <li>Divorcios</li>
+              <li>Pensiones alimenticias</li>
+              <li>Tenencia</li>
+              <li>Régimen de visitas</li>
+              <li>Adopciones</li>
+            </ul>
+          </div>
         </article>
 
         <article class="card">
-          <div class="card-icon">💼</div>
-          <h3>Derecho Laboral</h3>
-          <ul class="card-list">
-            <li>Despidos</li>
-            <li>Liquidaciones</li>
-            <li>Demandas laborales</li>
-          </ul>
+          <div class="card-media">
+            <img src="Imagen/servicios/derecho-laboral.jpg" alt="Derecho Laboral — despidos y liquidaciones" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Derecho Laboral</h3>
+            <ul class="card-list">
+              <li>Despidos</li>
+              <li>Liquidaciones</li>
+              <li>Demandas laborales</li>
+            </ul>
+          </div>
         </article>
 
         <article class="card">
-          <div class="card-icon">🛡️</div>
-          <h3>Derecho Penal</h3>
-          <ul class="card-list">
-            <li>Defensa penal</li>
-            <li>Denuncias</li>
-            <li>Audiencias</li>
-          </ul>
+          <div class="card-media">
+            <img src="Imagen/servicios/derecho-penal.png" alt="Derecho Penal — defensa penal en Cuenca" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Derecho Penal</h3>
+            <ul class="card-list">
+              <li>Defensa penal</li>
+              <li>Denuncias</li>
+              <li>Audiencias</li>
+            </ul>
+          </div>
         </article>
 
         <article class="card">
-          <div class="card-icon">🏠</div>
-          <h3>Derecho Inmobiliario</h3>
-          <ul class="card-list">
-            <li>Compra y venta</li>
-            <li>Escrituración</li>
-            <li>Regularización de propiedades</li>
-          </ul>
+          <div class="card-media">
+            <img src="Imagen/servicios/derecho-inmobiliario.jpg" alt="Derecho Inmobiliario — compraventa y escrituración" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Derecho Inmobiliario</h3>
+            <ul class="card-list">
+              <li>Compra y venta</li>
+              <li>Escrituración</li>
+              <li>Regularización de propiedades</li>
+            </ul>
+          </div>
         </article>
 
         <article class="card">
-          <div class="card-icon">🛂</div>
-          <h3>Derecho Migratorio</h3>
-          <ul class="card-list">
-            <li>Visas</li>
-            <li>Residencias</li>
-            <li>Ciudadanía</li>
-            <li>Peticiones familiares</li>
-            <li>Asilo</li>
-            <li>Perdones migratorios</li>
-          </ul>
+          <div class="card-media">
+            <img src="Imagen/servicios/derecho-migratorio.webp" alt="Derecho Migratorio — visas y residencias" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Derecho Migratorio</h3>
+            <ul class="card-list">
+              <li>Visas</li>
+              <li>Residencias</li>
+              <li>Ciudadanía</li>
+              <li>Peticiones familiares</li>
+              <li>Asilo</li>
+              <li>Perdones migratorios</li>
+            </ul>
+          </div>
         </article>
 
         <article class="card">
-          <div class="card-icon">🏢</div>
-          <h3>Derecho Empresarial</h3>
-          <ul class="card-list">
-            <li>Constitución de compañías</li>
-            <li>Contratos comerciales</li>
-            <li>Asesoría permanente</li>
-          </ul>
+          <div class="card-media">
+            <img src="Imagen/servicios/derecho-empresarial.jpg" alt="Derecho Empresarial — contratos y constitución de compañías" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Derecho Empresarial</h3>
+            <ul class="card-list">
+              <li>Constitución de compañías</li>
+              <li>Contratos comerciales</li>
+              <li>Asesoría permanente</li>
+            </ul>
+          </div>
         </article>
 
         <article class="card">
-          <div class="card-icon">📜</div>
-          <h3>Trámites Complementarios</h3>
-          <ul class="card-list">
-            <li>Poderes</li>
-            <li>Apostillas</li>
-            <li>Traducciones</li>
-            <li>Notarizaciones</li>
-          </ul>
+          <div class="card-media">
+            <img src="Imagen/servicios/tramites.jpg" alt="Trámites complementarios — poderes, apostillas y notarizaciones" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Trámites Complementarios</h3>
+            <ul class="card-list">
+              <li>Poderes</li>
+              <li>Apostillas</li>
+              <li>Traducciones</li>
+              <li>Notarizaciones</li>
+            </ul>
+          </div>
         </article>
       </div>
     </div>
@@ -428,19 +541,32 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm"
+              action="https://formsubmit.co/corporacionmoraec@gmail.com" method="POST">
           <h3>Cuéntanos tu caso</h3>
+
+          <!-- Configuración del servicio de envío de correo -->
+          <input type="hidden" name="_subject" value="Nueva consulta desde la web · Abogados Cuenca">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://davidfarinango1.github.io/abogados-cuenca/gracias.html">
+          <input type="text" name="_honey" style="display:none">
+
           <label>
             Nombre completo
-            <input type="text" name="nombre" required placeholder="Tu nombre">
+            <input type="text" name="Nombre" required placeholder="Tu nombre">
           </label>
           <label>
             Teléfono / WhatsApp
-            <input type="tel" name="telefono" required placeholder="09xxxxxxxx">
+            <input type="tel" name="Teléfono" required placeholder="09xxxxxxxx">
+          </label>
+          <label>
+            Correo electrónico
+            <input type="email" name="email" required placeholder="tucorreo@ejemplo.com">
           </label>
           <label>
             Área que necesitas
-            <select name="servicio">
+            <select name="Área">
               <option>Derecho Civil</option>
               <option>Derecho de Familia</option>
               <option>Derecho Laboral</option>
@@ -454,10 +580,14 @@
           </label>
           <label>
             Mensaje
-            <textarea name="mensaje" rows="4" placeholder="Describe brevemente tu situación"></textarea>
+            <textarea name="Mensaje" rows="4" required placeholder="Describe brevemente tu situación"></textarea>
           </label>
-          <button type="submit" class="btn btn-gold btn-block">Enviar por WhatsApp</button>
-          <p class="form-note">Al enviar se abrirá WhatsApp con tu mensaje listo.</p>
+          <button type="submit" class="btn btn-gold btn-block">Enviar consulta</button>
+          <p class="form-note">
+            Tu mensaje llega directo a <strong>corporacionmoraec@gmail.com</strong>.
+            ¿Prefieres una respuesta inmediata?
+            <a href="https://wa.me/593987246498" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>.
+          </p>
         </form>
       </div>
     </div>
@@ -471,7 +601,7 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
-      <img src="Imagen/logo.jpg" alt="Abogados Cuenca" class="footer-logo">
+      <img src="Imagen/imagen-3.jpg" alt="Sello Abogados Cuenca — Dr. Luis Mora Samaniego" class="footer-logo">
       <p class="footer-tag">Ayuda, protección y defensa para tus casos.</p>
     </div>
     <div>
