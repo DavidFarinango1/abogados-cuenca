@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "public": ".",
+    "site": "abogados-cuenca",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      ".git/**",
+      ".gitignore",
+      "**/.*",
+      "**/node_modules/**",
+      "README.md"
+    ]
+  }
+}
