@@ -9,7 +9,9 @@
       ".gitignore",
       "**/.*",
       "**/node_modules/**",
-      "README.md"
+      "README.md",
+      "Imagen/caso 12.htm",
+      "Imagen/caso 12_files/**"
     ]
   }
 }

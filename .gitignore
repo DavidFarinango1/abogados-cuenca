@@ -7,3 +7,7 @@ desktop.ini
 .idea/
 .claude/
 .firebase/
+
+# Página web guardada por error (no es parte del sitio)
+Imagen/caso 12.htm
+Imagen/caso 12_files/

@@ -82,7 +82,7 @@ Object.entries(CLONES).forEach(([nombre, selector]) => {
 
 // ===== Elementos con animación de entrada =====
 document
-  .querySelectorAll('.section-head, .card, .col-media, .col-text, .cta-inner, .mv-card, .value, .why, .grid-list, .quick-card')
+  .querySelectorAll('.section-head, .card, .col-media, .col-text, .cta-inner, .mv-card, .value, .why, .grid-list, .quick-card, .gallery-grid')
   .forEach(el => el.classList.add('reveal'));
 
 // ===== Header sólido al hacer scroll =====
