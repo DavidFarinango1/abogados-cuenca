@@ -107,25 +107,25 @@ a:hover { color: var(--white); }
   transition: height .3s ease;
 }
 .site-header.scrolled .brand-emblem { height: 76px; }
-/* letras-sf.png trae mucho margen vacío alrededor del texto (efecto de letrero luminoso);
-   se recorta con un contenedor que solo muestra la zona real del texto */
+/* logoletras.png trae margen vacío alrededor del texto; se recorta con un contenedor
+   que solo muestra la zona real del texto */
 .brand-letras-crop {
   display: block;
   position: relative;
   overflow: hidden;
-  width: 201px; height: 37px;
+  width: 198px; height: 54px;
   margin-right: 18px;
   transition: width .3s ease, height .3s ease;
 }
 .brand-letras-crop img {
   position: absolute;
-  width: 284px; height: 189px;
-  left: -38px; top: -75px;
+  width: 287px; height: 191px;
+  left: -42px; top: -64px;
   max-width: none;
   transition: width .3s ease, height .3s ease, left .3s ease, top .3s ease;
 }
-.site-header.scrolled .brand-letras-crop { width: 158px; height: 29px; }
-.site-header.scrolled .brand-letras-crop img { width: 223px; height: 148px; left: -30px; top: -59px; }
+.site-header.scrolled .brand-letras-crop { width: 155px; height: 42px; }
+.site-header.scrolled .brand-letras-crop img { width: 225px; height: 150px; left: -33px; top: -50px; }
 
 .nav { display: flex; align-items: center; gap: 15px; }
 .nav-link {
@@ -584,10 +584,10 @@ main { min-height: 72vh; }
   .nav-link { font-size: .7rem; letter-spacing: .06em; }
   .brand-emblem { height: 84px; }
   .site-header.scrolled .brand-emblem { height: 66px; }
-  .brand-letras-crop { width: 158px; height: 29px; margin-right: 12px; }
-  .brand-letras-crop img { width: 223px; height: 148px; left: -30px; top: -59px; }
-  .site-header.scrolled .brand-letras-crop { width: 120px; height: 22px; }
-  .site-header.scrolled .brand-letras-crop img { width: 169px; height: 113px; left: -23px; top: -45px; }
+  .brand-letras-crop { width: 155px; height: 42px; margin-right: 12px; }
+  .brand-letras-crop img { width: 225px; height: 150px; left: -33px; top: -50px; }
+  .site-header.scrolled .brand-letras-crop { width: 120px; height: 33px; }
+  .site-header.scrolled .brand-letras-crop img { width: 175px; height: 117px; left: -26px; top: -39px; }
   .header-inner { min-height: 104px; }
   .site-header.scrolled .header-inner { min-height: 88px; }
 }
@@ -626,8 +626,8 @@ main { min-height: 72vh; }
   .mv-card { padding: 32px 26px; }
   .strip-grid { grid-template-columns: 1fr 1fr; }
   .brand-emblem, .site-header.scrolled .brand-emblem { height: 68px; }
-  .brand-letras-crop, .site-header.scrolled .brand-letras-crop { width: 131px; height: 24px; margin-right: 10px; }
-  .brand-letras-crop img, .site-header.scrolled .brand-letras-crop img { width: 184px; height: 123px; left: -25px; top: -49px; }
+  .brand-letras-crop, .site-header.scrolled .brand-letras-crop { width: 129px; height: 35px; margin-right: 10px; }
+  .brand-letras-crop img, .site-header.scrolled .brand-letras-crop img { width: 187px; height: 125px; left: -27px; top: -42px; }
   .header-inner, .site-header.scrolled .header-inner { min-height: 90px; }
   .hero { padding-top: 140px; }
   .page > .section:first-child { padding-top: 140px; }
